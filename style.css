@@ -1,0 +1,33 @@
+body {
+    background-color: #0b0e14;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5%;
+    background: #161b22;
+}
+.logo { height: 50px; }
+.highlight { color: #00d2ff; }
+header {
+    text-align: center;
+    padding: 100px 10%;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('hero-bg.jpg');
+}
+.cta-button {
+    background: #25d366;
+    padding: 15px 30px;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+}
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+.card img { width: 300px; border-radius: 10px; border: 2px solid #00d2ff; }
