@@ -1,0 +1,6 @@
+# robots.txt for Pulse Social
+User-agent: *
+Allow: /
+
+# Link to your Sitemap
+Sitemap: https://pulsesocialagency1-star.github.io/pulse-social/sitemap.xml
