@@ -1,56 +1,81 @@
-/* General Reset */
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body { background-color: #0d1117; color: white; font-family: 'Segoe UI', sans-serif; }
+/* Mobile Optimization */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-/* Logo & Header */
-.logo { width: 120px; display: block; margin: 20px auto; }
-header { text-align: center; padding: 20px; }
+body {
+    background-color: #0b0e14;
+    color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
 
-/* Responsive Grid */
-.proof-container {
+.logo {
+    width: 100px;
+    display: block;
+    margin: 15px auto;
+}
+
+header {
+    text-align: center;
+    padding: 20px 10px;
+}
+
+/* Proof Gallery - Full Width Adjustment */
+.proof-gallery {
     display: flex;
-    flex-wrap: wrap; /* Allows stacking on mobile */
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
 }
 
-.proof-card {
-    flex: 1 1 300px; /* Minimum width of 300px before wrapping */
-    max-width: 500px;
+.proof-item {
+    width: 100%;
+    max-width: 500px; /* Limits size on desktop but stays full width on mobile */
+    margin-bottom: 25px;
     background: #161b22;
-    border-radius: 12px;
+    border: 2px solid #00d2ff;
+    border-radius: 10px;
     overflow: hidden;
-    border: 1px solid #30363d;
 }
 
-.proof-card img {
-    width: 100%; /* Makes image fit the container width */
-    height: auto; /* Maintains aspect ratio */
+.proof-item img {
+    width: 100%; /* Forces image to fit the mobile screen width */
+    height: auto; /* Maintains original proportions */
     display: block;
 }
 
-.label {
-    padding: 15px;
+.caption {
+    padding: 10px;
     text-align: center;
+    font-size: 14px;
     font-weight: bold;
-    color: #58a6ff;
+    background: #1c2128;
 }
 
-/* WhatsApp Button */
-.cta-section { text-align: center; padding: 40px 20px; }
-.wa-btn {
-    background-color: #23d366;
+/* WhatsApp Fixed Button */
+.contact-footer {
+    text-align: center;
+    padding: 30px 10px;
+}
+
+.whatsapp-button {
+    background-color: #25d366;
     color: white;
-    padding: 15px 30px;
+    padding: 15px 25px;
     text-decoration: none;
-    border-radius: 50px;
+    border-radius: 8px;
     font-weight: bold;
     display: inline-block;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
 }
 
-/* Mobile Adjustments for Chrome */
-@media (max-width: 600px) {
-    .proof-container { padding: 10px; }
-    .proof-card { flex: 1 1 100%; } /* Stacks 1 image per row on small screens */
+/* Specific Chrome Mobile Fix */
+@media screen and (max-width: 480px) {
+    h1 { font-size: 22px; }
+    .proof-gallery { padding: 5px; }
 }
