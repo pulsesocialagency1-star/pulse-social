@@ -1,6 +1,11 @@
-# robots.txt for Pulse Social
+# Optimized for Pulse Social Global SMM Agency
 User-agent: *
 Allow: /
 
-# Link to your Sitemap
+# Allow indexing of proof images for Google Image Search
+Allow: /proof1.jpg
+Allow: /proof2.jpg
+Allow: /proof3.jpg
+Allow: /proof4.jpg
+
 Sitemap: https://pulsesocialagency1-star.github.io/pulse-social/sitemap.xml
