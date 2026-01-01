@@ -1,33 +1,7 @@
-body {
-    background-color: #0b0e14;
-    color: white;
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-}
-nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 5%;
-    background: #161b22;
-}
-.logo { height: 50px; }
-.highlight { color: #00d2ff; }
-header {
-    text-align: center;
-    padding: 100px 10%;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('hero-bg.jpg');
-}
-.cta-button {
-    background: #25d366;
-    padding: 15px 30px;
-    color: white;
-    text-decoration: none;
-    border-radius: 50px;
-    font-weight: bold;
-}
-.gallery {
-    display: flex;
-    justify-content: space-around;
-    padding: 50px;
-}
-.card img { width: 300px; border-radius: 10px; border: 2px solid #00d2ff; }
+body { background-color: #050505; color: #fff; font-family: sans-serif; text-align: center; }
+.logo { width: 150px; padding: 20px; }
+.pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; padding: 40px; }
+.card { background: #1a1a1a; padding: 20px; border-radius: 15px; border: 1px solid #00d2ff; }
+.card h3 { color: #00d2ff; }
+.btn { display: inline-block; background: #25d366; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; margin-top: 10px; }
+.proof-img { width: 80%; max-width: 600px; border-radius: 10px; box-shadow: 0 0 20px #00d2ff; }
